@@ -46,7 +46,9 @@ services:
 **build** - Directory with Dockerfile for building the image.  
 [**Dockerfile**](build/Dockerfile) - for building the image.  
 **config** - Directory with apache2 and Others configuration file.  
-**apache2** - Directory with apache2 configuration file.  
+**apache2** - Directory with apache2 configuration file. You can set your own configuration here.  
+[**000-default.conf**](config/apache2/sites-available/000-default.conf) - You can set your own web server configuration here.
+[**default-ssl.conf**](config/apache2/sites-available/default-ssl.conf) - You can set your own web server with ssl protocol configuration here.
 **html** - Put your awesome HTML files over here.  
 [**index.html**](html/index.html) - Sample html file.
 
