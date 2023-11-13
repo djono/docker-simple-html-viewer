@@ -1,0 +1,11 @@
+services:
+  web:
+    build:
+      context: build
+      target: builder
+    container_name: "MAZJOHN-HTML"
+    ports: 
+      - '8080:80'
+    volumes:
+      - ./html:/var/www/html/
+      - ./config/apache2:/etc/apache2/
